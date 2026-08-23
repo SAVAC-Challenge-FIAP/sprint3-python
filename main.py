@@ -1,7 +1,8 @@
 import json
-import random as rd # Usado para determinar músicas e filtros aleatórios, enquanto nao temos integração
+import random as rd # Usado para determinar músicas e filtros aleatórios, enquanto ainda nao temos integração externa com api
 
-# Do conteúdo que está no código e não foi dado, foi utilizado: funções, json, dicionário, upper(), try/except, além de manipulações de strings com cor, slicing e alinhamento para prints
+# Nesse código existe conteúdos que fazem parte da sprint 4, sendo eles: json e try/except, 
+# Além disso, sobre o conteúdo que não foi dado em aula, foi utilizado upper() e manipulações de strings com cor, slicing e alinhamento para prints
 
 def print_invalido(): # Função para printar que a entrada é inválida
     print('\nEntrada inválida!! ')
@@ -9,7 +10,7 @@ def print_invalido(): # Função para printar que a entrada é inválida
 
 def permissoes_aplicativo(): # Função para o usuário permitir o acesso a outros aplicativos
     while True:
-        print("Pra começar, precisamos de algumas permissões:\n")
+        print("Pra começar, precisamos  de algumas permissões:\n")
         print("O Synesthesia precisa acessar sua câmera e galeria.")
         print("Usamos isso para aplicar filtros inteligentes com base no seu ambiente.")
         print("\n🔒 Fique tranquilo: todo o processamento é feito direto no seu celular!")
