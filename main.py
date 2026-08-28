@@ -1,7 +1,7 @@
 import json
 import random as rd # Usado para determinar músicas e filtros aleatórios, enquanto ainda nao temos integração externa com api
 
-# Nesse código existe conteúdos que fazem parte da sprint 4, sendo eles: json e try/except, 
+# Nesse código existe conteúdos que fazem parte da sprint 4, sendo eles: json e try/except. A única coisa que falta para a sprint 4 é integração com API externa
 # Além disso, sobre o conteúdo que não foi dado em aula, foi utilizado upper() e manipulações de strings com cor, slicing e alinhamento para prints
 
 def print_invalido(): # Função para printar que a entrada é inválida
@@ -158,22 +158,7 @@ def escolha_filtros(nomes_filtros,filtro_atual): # Função para o usuário dize
             print('Tente novamente\n')
 
 def menu_de_edicao_da_foto(id,nomes_filtros,filtros): # Função para mostrar o menu de edição de foto
-
-    # Recebe as fotos da galeria.json atualizada
-
-    # # Recebe o filtros.json do nosso sistema
-    # with open('filtros.json', 'r', encoding='utf-8') as f:
-    #     dados_filtros = json.load(f) 
-
-    # filtros = dados_filtros['filtros'] # Aqui ficará armazenado a lista de dados dos filtros para ser usado em verificações
-
-    # filtro_determinado = rd.randint(0,6) # Esse número vai determinar o filtro julgado pelo nosso sistema como o filtro da 'Vibe' da imagem no leitor da câmera em tempo real. Entretanto, como não temos integração ainda, ele terá um filtro aleatório setado como inicial
-
-    # filtro_atual = filtros[filtro_determinado]['nome'] # Aqui vai ser armazenado o nome do filtro selecionado para ser usado em verificações
-
-    # filtro_formatado = filtros[filtro_determinado]['formatado'] # Aqui vai ser armazenado o filtro selecionado formatado com emoji para ser usado no menu de edição
-
-
+    
     with open('galeria.json', 'r', encoding='utf-8') as g: 
         dados_fotos = json.load(g)["fotos"]
     
