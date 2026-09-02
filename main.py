@@ -1,8 +1,8 @@
 import json
-import random as rd # Usado para determinar músicas e filtros aleatórios, enquanto ainda nao temos integração externa com api
+import random as rd # Usado para determinar músicas e filtros aleatórios
+import requests # Usado para fazer requisições para a API externa
 
-# Nesse código existe conteúdos que fazem parte da sprint 4, sendo eles: json e try/except. A única coisa que falta para a sprint 4 é integração com API externa
-# Além disso, sobre o conteúdo que não foi dado em aula, foi utilizado upper() e manipulações de strings com cor, slicing e alinhamento para prints
+# Nest código existe conteúdos que não foram dados em aula, upper() além de manipulações de strings com cor, slicing e alinhamento para prints
 
 def print_invalido(): # Função para printar que a entrada é inválida
     print('\nEntrada inválida!! ')
@@ -476,6 +476,8 @@ def main(uso_dados): # Função principal para mostrar o visor da câmera
                     num2 = 0
 
                 # Todas as músicas, por enquanto tem por padrão 30 segundos, mas ao usuário salvar a foto, ela pode ter menos tempo de duração 
+
+                # Aqui será a integração com a API do gemini, que vai criar 3 nomes de filtros própris e assim (talvez) pegar a música no deezer para adicionar à foto
 
                 # Nosso sistema recebe todas as fotos da galeria.json para criar um novo índice ao adicionar a foto recém tirada
                 with open('galeria.json', 'r', encoding='utf-8') as g: 
